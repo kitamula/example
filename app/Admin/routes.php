@@ -13,5 +13,7 @@ Route::group([
     $router->post('/fileupload', 'FileuploadController@index')->name('fileupload'); // Image Upload API
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('administrators', AdministratorController::class);
+    $router->resource('shops', ShopController::class);
+    $router->resource('shop-articles', ShopArticleController::class);
 
 });
